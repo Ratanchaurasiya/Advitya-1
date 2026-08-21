@@ -1,85 +1,95 @@
-# Advitya ERP — The Operating System for Modern Real Estate
+# Evoniq ERP — AI-Powered Enterprise & Real Estate Operating System
 
-[![Meta Tech Provider Compliant](https://img.shields.io/badge/Meta%20Compliance-Verified-1877F2?logo=meta&logoColor=white)](https://advaityaprojects.com)
+[![Meta Tech Provider Compliant](https://img.shields.io/badge/Meta%20Compliance-Verified-1877F2?logo=meta&logoColor=white)](https://evoniqerp.com)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-Bundler-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-Proprietary-orange)](#)
 
-Advitya ERP is an enterprise-grade Customer Relationship Management (CRM) and Enterprise Resource Planning (ERP) platform developed by **Advitya Projects** specifically for modern real estate developers, property agencies, and sales organizations.
+Evoniq ERP is a multi-module, AI-powered cloud B2B SaaS platform developed and operated by **The Propking Realty**, serving enterprises across Real Estate, MEP, Construction, and Civil Engineering.
 
 ---
 
 ## 🏢 Corporate Entity & Contact
 
-- **Company Name:** Advitya Projects
-- **Product:** Advitya ERP
-- **Corporate Headquarters:** A-1118, The Capital, Opp Hetarth Party Plot, Science City Road, Ahmedabad, Gujarat, India
-- **Official Email:** info@advaityaprojects.com
-- **Direct Phone / Support:** +91 9173112620
+- **Legal Operating Entity:** The Propking Realty
+- **Product / Platform:** Evoniq ERP
+- **Primary Domain:** evoniqerp.com
+- **Corporate Headquarters:** A-1118, The Capital, Opp. Hetarth Party Plot, Science City Road, Ahmedabad, Gujarat, India
+- **Support Email:** support@evoniqerp.com
+- **Contact Phone:** +91 91731 12620
 
 ---
 
-## 🚀 Key Modules & Architecture
+## 🚀 Core ERP Modules
 
-1. **Multi-Source Lead Integration (Meta Tech Provider Compliant):**
-   - Direct integration with Meta Lead Ads (Facebook & Instagram Instant Forms) and WhatsApp Business API.
-   - Strict data protection governance: customer leads are processed exclusively for CRM operations on behalf of clients and are never sold, brokered, or repurposed.
-2. **Sales & CRM Engine:**
-   - Full pipeline lifecycle: Lead Capture → Qualification → Assignment → Follow Up → Site Visit → Negotiation → Booking.
-3. **Omnichannel Communications:**
-   - WhatsApp Business API templates, cloud telephony, and unified communication timeline.
-4. **Business Health Analytics:**
-   - Executive Dashboard computing live composite **Business Health Score (0-100)** across Lead Health, Sales Health, and Revenue Health.
+1. **Real Estate ERP** — End-to-end AI ERP from lead capture to possession with integrated sales automation, AI Lead Calling, Voice Commands, OCR Pro, and ML Predictions.
+2. **MEP ERP** — Mechanical, Electrical, and Plumbing workflows from design to commissioning with automated handover documentation and 40% less downtime via ML Predictions.
+3. **Construction ERP** — Predictive scheduling, real-time on-site visibility, and AI-driven project cost management with ERP RAG and MCP.
+4. **Civil Engineering ERP** — Design-build workflow integration with automated change order tracking and compliance documentation.
+
+---
+
+## 🔗 Meta Platform Integration (Verification Critical)
+
+Evoniq ERP integrates with Meta Lead Ads and WhatsApp-to-Lead pipelines to provide:
+- **Zero-Latency Ingestion** — Instant capture of WhatsApp-to-Lead conversations and Meta Lead Ad submissions into the centralized CRM dashboard.
+- **Multi-Portfolio Support** — Secure isolation of lead streams across multiple Meta Business Portfolios.
+- **Automated SLA & Follow-up** — AI-powered lead routing with automated calling triggers and reminder workflows.
+
+> **Data Governance:** Evoniq ERP operates as a SaaS data processor. Meta Platform Data is ingested solely to provide CRM/ERP services requested by the customer and is **never sold, brokered, or repurposed**.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Framework:** React 19 + Vite
+- **Routing:** React Router DOM v7
 - **Styling:** Tailwind CSS v4
 - **Icons:** Lucide React
 - **Animations:** Framer Motion
 
 ---
 
-## 💻 Local Development Setup
+## 💻 Local Development
 
 ### Prerequisites
-- Node.js (v18 or higher)
+- Node.js v18+
 - npm or yarn
 
-### Installation
+### Setup
 ```bash
-# Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Ratanchaurasiya/Advitya-1.git
 cd Advitya-1
-
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+npm run dev        # Start dev server
+npm run build      # Production build
+npm run preview    # Preview production build
 ```
+
+---
+
+## 📄 Legal & Compliance Pages
+
+| Page | Route | Description |
+|---|---|---|
+| Privacy Policy | `/privacy-policy` | Full SaaS data processor privacy policy with Meta Platform Data disclosure |
+| Data Deletion | `/data-deletion` | Step-by-step data deletion instructions for in-app and email-based requests |
+| Terms of Service | `/terms-of-service` | Standard B2B SaaS subscription and usage terms |
 
 ---
 
 ## 🛡️ Meta Platform & Privacy Compliance
 
-Advitya ERP complies strictly with Meta Platform Terms and Developer Policies:
-- Data collected through Meta APIs is encrypted via TLS 1.3 in transit and AES-256 at rest.
-- Access is restricted via enterprise Role-Based Access Controls (RBAC).
-- Functional legal documentation (Privacy Policy, Terms of Service, and Contact Us) are integrated into the global application layout.
+- Data encrypted via TLS 1.3 in transit and AES-256 at rest
+- Enterprise Role-Based Access Controls (RBAC)
+- Functional legal pages at dedicated URL routes
+- Explicit SaaS data processor language throughout
+- Zero placeholder / Lorem Ipsum content
 
 ---
 
-## 📄 License & Attribution
+## 📄 License
 
-Copyright © 2026 Advitya Projects. All rights reserved.  
-*Advitya ERP is a proprietary product developed and operated by Advitya Projects.*
+Copyright © 2026 The Propking Realty. All rights reserved.
+*Evoniq ERP is a proprietary B2B SaaS platform engineered and operated by The Propking Realty.*

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import HeroSection from './components/hero/HeroSection';
@@ -9,7 +10,40 @@ import BusinessHealthSection from './components/sections/BusinessHealthSection';
 import FinalCTASection from './components/sections/FinalCTASection';
 import LegalModal from './components/legal/LegalModal';
 import DemoModal from './components/modals/DemoModal';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import DataDeletionPage from './pages/DataDeletionPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 
+/* ─────────────────────────────────────
+   Landing Page — main single-page layout
+   ───────────────────────────────────── */
+function LandingPage({ onBookDemo }) {
+  return (
+    <main className="flex-grow">
+      {/* Hero Section */}
+      <HeroSection onBookDemo={onBookDemo} />
+
+      {/* Problem & Solution */}
+      <ProblemSolutionSection />
+
+      {/* Meta Integration & WhatsApp-to-Lead Pipeline */}
+      <MetaIntegrationSection />
+
+      {/* 4 Core ERP Modules */}
+      <ModuleGridSection onBookDemo={onBookDemo} />
+
+      {/* Business Health Analytics Dashboard */}
+      <BusinessHealthSection />
+
+      {/* Final Conversion CTA */}
+      <FinalCTASection onBookDemo={onBookDemo} />
+    </main>
+  );
+}
+
+/* ─────────────────────────────────────
+   App Shell — routing + global modals
+   ───────────────────────────────────── */
 export default function App() {
   const [legalModalOpen, setLegalModalOpen] = useState(false);
   const [activeLegalDoc, setActiveLegalDoc] = useState('privacy');
@@ -20,36 +54,25 @@ export default function App() {
     setLegalModalOpen(true);
   };
 
+  const handleBookDemo = () => setDemoModalOpen(true);
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 text-slate-900 font-sans selection:bg-orange-500 selection:text-white">
       {/* Global Navbar */}
       <Navbar
         onOpenLegal={handleOpenLegal}
-        onBookDemo={() => setDemoModalOpen(true)}
+        onBookDemo={handleBookDemo}
       />
 
-      {/* Main Content Area */}
-      <main className="flex-grow">
-        {/* Phase 2: Hero Section */}
-        <HeroSection onBookDemo={() => setDemoModalOpen(true)} />
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<LandingPage onBookDemo={handleBookDemo} />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/data-deletion" element={<DataDeletionPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+      </Routes>
 
-        {/* Phase 2: Problem & Solution (Before / After Advitya) */}
-        <ProblemSolutionSection />
-
-        {/* Phase 3: Meta Integration & Workflow */}
-        <MetaIntegrationSection />
-
-        {/* Phase 4: Module Grid Architecture */}
-        <ModuleGridSection onBookDemo={() => setDemoModalOpen(true)} />
-
-        {/* Phase 5: Business Health Showcase */}
-        <BusinessHealthSection />
-
-        {/* Phase 5: Final Conversion CTA */}
-        <FinalCTASection onBookDemo={() => setDemoModalOpen(true)} />
-      </main>
-
-      {/* Global Meta-Compliant Footer */}
+      {/* Global Footer */}
       <Footer onOpenLegal={handleOpenLegal} />
 
       {/* Global Modals */}

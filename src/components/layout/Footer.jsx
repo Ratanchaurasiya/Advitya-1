@@ -1,179 +1,217 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
-  Building2, ShieldCheck, Mail, Lock, CheckCircle2,
-  ArrowUpRight, Phone, MapPin, Globe
+  Building2,
+  ShieldCheck,
+  Mail,
+  Lock,
+  ArrowUpRight,
+  Phone,
+  MapPin,
 } from 'lucide-react';
 
 export default function Footer({ onOpenLegal }) {
+  const currentYear = new Date().getFullYear();
+
+  const erpModules = [
+    { name: 'Real Estate ERP', href: '#real-estate' },
+    { name: 'MEP ERP', href: '#mep' },
+    { name: 'Construction ERP', href: '#construction' },
+    { name: 'Civil Engineering ERP', href: '#civil' },
+    { name: 'Business Analytics', href: '#analytics' },
+  ];
+
+  const integrations = [
+    { name: 'Meta Lead Ads API', href: '#meta-ads' },
+    { name: 'WhatsApp-to-Lead Pipeline', href: '#whatsapp-lead' },
+    { name: 'Cloud Telephony', href: '#telephony' },
+    { name: 'Procurement Automation', href: '#procurement' },
+    { name: 'AI Lead Routing', href: '#ai-routing' },
+  ];
+
+  const legalLinks = [
+    { name: 'Privacy Policy', path: '/privacy-policy' },
+    { name: 'Data Deletion', path: '/data-deletion' },
+    { name: 'Terms of Service', path: '/terms-of-service' },
+  ];
+
   return (
-    <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
+    <footer className="bg-slate-950 text-slate-400 border-t border-slate-800">
       {/* Top Meta Compliance Banner */}
-      <div className="border-b border-slate-800/80 bg-slate-950/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-500 shrink-0">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="text-sm font-semibold text-white">Meta Platform Data Protection & Tech Compliance</h4>
-                <p className="text-xs text-slate-400 mt-0.5">
-                  Advitya ERP connects Meta Lead generation sources exclusively for real estate CRM management. We strictly do not sell, broker, or repurpose customer data.
-                </p>
-              </div>
+      <div className="border-b border-slate-800/80 bg-gradient-to-r from-blue-950/40 via-slate-900/60 to-indigo-950/40 py-4 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-start sm:items-center gap-3">
+            <div className="p-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 shrink-0">
+              <ShieldCheck className="w-5 h-5" />
             </div>
-            <button
-              onClick={() => onOpenLegal && onOpenLegal('privacy')}
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-orange-400 hover:text-orange-300 bg-slate-800/80 hover:bg-slate-800 px-3.5 py-2 rounded-lg border border-slate-700 transition-colors shrink-0 cursor-pointer"
-            >
-              Read Data Policy
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </button>
+            <div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">Meta Tech Compliance</span>
+                <span className="text-slate-600 hidden sm:inline">•</span>
+                <span className="text-sm font-semibold text-slate-200">Meta Platform Data Protection & Tech Compliance</span>
+              </div>
+              <p className="text-xs text-slate-400 mt-0.5 max-w-3xl">
+                Evoniq ERP ingests Meta Lead generation and WhatsApp-to-Lead data exclusively for B2B SaaS CRM operations on behalf of authorized clients. Data is never sold, brokered, or repurposed.
+              </p>
+            </div>
           </div>
+          <Link
+            to="/privacy-policy"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-blue-600/10 hover:bg-blue-600/20 border border-blue-500/30 text-xs font-medium text-blue-300 transition-colors shrink-0"
+          >
+            <span>Read Data Policy</span>
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </Link>
         </div>
       </div>
 
-      {/* Main Footer Links */}
+      {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
-          {/* Brand Col (2 cols wide on LG) */}
-          <div className="lg:col-span-2 space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+          {/* Brand Column (lg:col-span-2) */}
+          <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-white border border-slate-700">
-                <Building2 className="w-5 h-5 text-orange-500" />
+              <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700/80 flex items-center justify-center text-orange-500 shadow-md shadow-orange-500/5">
+                <Building2 className="w-5 h-5" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-xl font-bold tracking-tight text-white">Advitya</span>
-                  <span className="text-xs px-2 py-0.5 font-bold uppercase tracking-wider bg-orange-500 text-white rounded-md">
+                  <span className="text-xl font-bold text-white tracking-tight">Evoniq</span>
+                  <span className="px-1.5 py-0.5 text-[10px] font-bold tracking-wider uppercase bg-orange-500/20 text-orange-400 border border-orange-500/30 rounded">
                     ERP
                   </span>
                 </div>
-                <span className="text-xs text-slate-400">by Advitya Projects</span>
+                <p className="text-xs text-slate-400">by The Propking Realty</p>
               </div>
             </div>
-            
+
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-              Advitya ERP is the comprehensive Operating System for modern real estate developers, agencies, and project sales teams. Centralizing leads, pipeline execution, and business health.
+              Evoniq ERP is a unified AI-powered cloud SaaS platform for Real Estate, MEP, Construction, and Civil Engineering enterprises.
             </p>
 
-            {/* Genuine Contact Box inside Footer */}
-            <div className="pt-2 space-y-2 text-xs text-slate-400">
-              <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
-                <span>A-1118, The Capital, Opp Hetarth Party Plot, Science City Road, Ahmedabad, Gujarat, India</span>
+            {/* Genuine Contact Details */}
+            <div className="space-y-2.5 text-xs text-slate-300">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
+                <span className="leading-relaxed">
+                  A-1118, The Capital, Opp. Hetarth Party Plot, Science City Road, Ahmedabad, Gujarat, India
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-blue-400 shrink-0" />
-                <a href="mailto:info@advaityaprojects.com" className="hover:text-white transition-colors">
-                  info@advaityaprojects.com
+              <div className="flex items-center gap-2.5">
+                <Mail className="w-4 h-4 text-orange-400 shrink-0" />
+                <a
+                  href="mailto:support@evoniqerp.com"
+                  className="hover:text-white transition-colors"
+                >
+                  support@evoniqerp.com
                 </a>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <a href="tel:9173112620" className="hover:text-white transition-colors">
-                  +91 9173112620
+              <div className="flex items-center gap-2.5">
+                <Phone className="w-4 h-4 text-orange-400 shrink-0" />
+                <a
+                  href="tel:+919173112620"
+                  className="hover:text-white transition-colors"
+                >
+                  +91 91731 12620
                 </a>
               </div>
             </div>
 
-            <div className="flex items-center gap-2 pt-2 text-xs text-slate-400">
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/60 text-emerald-400">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                SOC 2 & TLS 1.3 Encryption Standard
-              </span>
+            {/* SOC 2 & TLS 1.3 Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/30 text-emerald-400 text-xs font-medium">
+              <Lock className="w-3.5 h-3.5" />
+              <span>SOC 2 Type II Certified & TLS 1.3 Encryption</span>
             </div>
           </div>
 
-          {/* Col 2: Platform Modules */}
+          {/* Column: ERP Modules */}
           <div>
-            <h5 className="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">
-              Core Modules
-            </h5>
-            <ul className="space-y-2.5 text-sm text-slate-400">
-              <li><a href="#modules" className="hover:text-white transition-colors">Lead Management</a></li>
-              <li><a href="#modules" className="hover:text-white transition-colors">Sales & CRM Engine</a></li>
-              <li><a href="#modules" className="hover:text-white transition-colors">Site Visit Tracker</a></li>
-              <li><a href="#modules" className="hover:text-white transition-colors">Omnichannel Comms</a></li>
-              <li><a href="#business-health" className="hover:text-white transition-colors">Business Health Analytics</a></li>
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-200 mb-4">
+              ERP Modules
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              {erpModules.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-slate-400 hover:text-white transition-colors flex items-center gap-1 group"
+                  >
+                    <span>{item.name}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Col 3: Integrations & Workflows */}
+          {/* Column: Integrations */}
           <div>
-            <h5 className="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-200 mb-4">
               Integrations
-            </h5>
-            <ul className="space-y-2.5 text-sm text-slate-400">
-              <li><a href="#meta-integration" className="hover:text-white transition-colors">Meta Lead Ads API</a></li>
-              <li><a href="#meta-integration" className="hover:text-white transition-colors">Facebook Instant Forms</a></li>
-              <li><a href="#meta-integration" className="hover:text-white transition-colors">WhatsApp Business Gateway</a></li>
-              <li><a href="#workflow" className="hover:text-white transition-colors">Telephony & Cloud IVR</a></li>
-              <li><a href="#workflow" className="hover:text-white transition-colors">Inventory Booking Pipeline</a></li>
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              {integrations.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
+                  >
+                    <span>{item.name}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Col 4: Mandatory Compliance & Legal */}
+          {/* Column: Legal & Compliance */}
           <div>
-            <h5 className="text-xs font-bold uppercase tracking-wider text-slate-200 mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-200 mb-4">
               Legal & Compliance
-            </h5>
-            <ul className="space-y-2.5 text-sm text-slate-400">
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              {legalLinks.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    to={item.path}
+                    className="text-slate-400 hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <button
-                  onClick={() => onOpenLegal && onOpenLegal('privacy')}
-                  className="hover:text-white transition-colors flex items-center gap-1.5 text-left cursor-pointer"
+                  type="button"
+                  onClick={() => {
+                    if (onOpenLegal) {
+                      onOpenLegal('contact');
+                    } else {
+                      window.location.href = 'mailto:support@evoniqerp.com';
+                    }
+                  }}
+                  className="text-slate-400 hover:text-white transition-colors text-left cursor-pointer"
                 >
-                  <Lock className="w-3.5 h-3.5 text-orange-400" />
-                  Privacy Policy
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onOpenLegal && onOpenLegal('terms')}
-                  className="hover:text-white transition-colors text-left cursor-pointer"
-                >
-                  Terms of Service
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onOpenLegal && onOpenLegal('contact')}
-                  className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-orange-400 font-semibold cursor-pointer"
-                >
-                  <Mail className="w-3.5 h-3.5" />
-                  Contact & Office Details
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onOpenLegal && onOpenLegal('privacy')}
-                  className="hover:text-white transition-colors text-left text-xs text-slate-500 pt-1"
-                >
-                  Meta Data Usage Terms
+                  Contact Us
                 </button>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Legal Attribution */}
-        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p className="font-medium text-slate-400">
-            Advitya ERP — A real-estate business management platform by Advitya Projects.
+        {/* Bottom Section */}
+        <div className="mt-12 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <p className="text-center md:text-left">
+            &copy; {currentYear} Evoniq ERP. All rights reserved. Evoniq ERP is a proprietary B2B SaaS platform engineered and operated by The Propking Realty.
           </p>
           <div className="flex items-center gap-6">
-            <button onClick={() => onOpenLegal('privacy')} className="hover:text-slate-300 transition-colors cursor-pointer">
+            <Link to="/privacy-policy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
-            </button>
-            <span>•</span>
-            <button onClick={() => onOpenLegal('terms')} className="hover:text-slate-300 transition-colors cursor-pointer">
+            </Link>
+            <Link to="/terms-of-service" className="hover:text-slate-300 transition-colors">
               Terms of Service
-            </button>
-            <span>•</span>
-            <button onClick={() => onOpenLegal('contact')} className="hover:text-slate-300 transition-colors cursor-pointer">
-              Contact Us
-            </button>
+            </Link>
+            <Link to="/data-deletion" className="hover:text-slate-300 transition-colors">
+              Data Deletion
+            </Link>
           </div>
         </div>
       </div>
