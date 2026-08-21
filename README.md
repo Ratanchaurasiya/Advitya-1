@@ -6,14 +6,13 @@
 [![Vite](https://img.shields.io/badge/Vite-Bundler-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-Proprietary-orange)](#)
 
-Evoniq ERP is a multi-module, AI-powered cloud B2B SaaS platform developed and operated by **The Propking Realty**, serving enterprises across Real Estate, MEP, Construction, and Civil Engineering.
+Evoniq ERP is a multi-module, AI-powered cloud B2B SaaS platform serving enterprises across Real Estate, MEP, Construction, and Civil Engineering.
 
 ---
 
 ## 🏢 Corporate Entity & Contact
 
-- **Legal Operating Entity:** The Propking Realty
-- **Product / Platform:** Evoniq ERP
+- **Platform:** Evoniq ERP
 - **Primary Domain:** evoniqerp.com
 - **Corporate Headquarters:** A-1118, The Capital, Opp. Hetarth Party Plot, Science City Road, Ahmedabad, Gujarat, India
 - **Support Email:** support@evoniqerp.com
@@ -91,5 +90,5 @@ npm run preview    # Preview production build
 
 ## 📄 License
 
-Copyright © 2026 The Propking Realty. All rights reserved.
-*Evoniq ERP is a proprietary B2B SaaS platform engineered and operated by The Propking Realty.*
+Copyright © 2026 Evoniq ERP. All rights reserved.  
+*Evoniq ERP is a proprietary multi-module B2B SaaS platform.*

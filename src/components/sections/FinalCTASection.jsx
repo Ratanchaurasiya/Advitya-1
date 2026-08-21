@@ -156,7 +156,7 @@ export default function FinalCTASection({ onBookDemo }) {
           {/* Bottom attribution bar */}
           <div className="px-6 sm:px-10 py-4 bg-slate-950 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
             <span className="font-medium text-center sm:text-left">
-              Evoniq ERP is a proprietary B2B SaaS platform engineered and operated by The Propking Realty.
+              Evoniq ERP is a proprietary multi-module B2B SaaS platform engineered for modern enterprise operations.
             </span>
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-semibold shrink-0">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>

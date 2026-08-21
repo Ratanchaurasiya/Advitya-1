@@ -81,7 +81,7 @@ export default function Footer({ onOpenLegal }) {
                     ERP
                   </span>
                 </div>
-                <p className="text-xs text-slate-400">by The Propking Realty</p>
+                <p className="text-xs text-slate-400">Enterprise Cloud SaaS</p>
               </div>
             </div>
 
@@ -200,7 +200,7 @@ export default function Footer({ onOpenLegal }) {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p className="text-center md:text-left">
-            &copy; {currentYear} Evoniq ERP. All rights reserved. Evoniq ERP is a proprietary B2B SaaS platform engineered and operated by The Propking Realty.
+            &copy; {currentYear} Evoniq ERP. All rights reserved. Evoniq ERP is a proprietary multi-module B2B SaaS platform.
           </p>
           <div className="flex items-center gap-6">
             <Link to="/privacy-policy" className="hover:text-slate-300 transition-colors">

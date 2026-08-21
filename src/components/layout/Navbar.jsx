@@ -77,7 +77,7 @@ export default function Navbar({ onBookDemo }) {
                 </span>
               </div>
               <span className="text-[11px] text-slate-400 font-medium tracking-wide">
-                by The Propking Realty
+                Enterprise Cloud SaaS
               </span>
             </div>
           </a>

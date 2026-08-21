@@ -106,7 +106,7 @@ export default function DataDeletionPage() {
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-slate-200 text-center">
           <p className="text-slate-500 text-sm mb-4">
-            &copy; {new Date().getFullYear()} The Propking Realty. All rights reserved.
+            &copy; {new Date().getFullYear()} Evoniq ERP. All rights reserved.
           </p>
           <div className="space-x-4">
             <Link to="/" className="text-sm text-slate-500 hover:text-orange-600 transition-colors">Home</Link>

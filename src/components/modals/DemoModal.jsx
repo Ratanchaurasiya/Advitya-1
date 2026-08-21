@@ -95,7 +95,7 @@ export default function DemoModal({ isOpen, onClose }) {
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Demo Request Received</h4>
                   <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-slate-900 font-semibold">{formData.fullName}</strong>. An enterprise solution architect from <strong className="text-slate-900 font-semibold">The Propking Realty</strong> will reach out at <strong className="text-slate-900 font-semibold">{formData.workEmail}</strong> within 1 business day.
+                    Thank you, <strong className="text-slate-900 font-semibold">{formData.fullName}</strong>. An enterprise solution architect from <strong className="text-slate-900 font-semibold">Evoniq ERP</strong> will reach out at <strong className="text-slate-900 font-semibold">{formData.workEmail}</strong> within 1 business day.
                   </p>
                   <div className="pt-4">
                     <button

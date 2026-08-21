@@ -49,7 +49,7 @@ export default function LegalModal({ isOpen, onClose, activeDoc = 'privacy', onS
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-900">{currentDoc.title}</h3>
-                <p className="text-xs text-slate-500">Evoniq ERP • The Propking Realty • {currentDoc.lastUpdated}</p>
+                <p className="text-xs text-slate-500">Evoniq ERP • Enterprise Compliance • {currentDoc.lastUpdated}</p>
               </div>
             </div>
             <button onClick={onClose} className="p-2 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 cursor-pointer">
@@ -94,8 +94,8 @@ export default function LegalModal({ isOpen, onClose, activeDoc = 'privacy', onS
                       </div>
                       <div>
                         <div className="flex items-center gap-2">
-                          <h4 className="text-xl font-bold">The Propking Realty</h4>
-                          <span className="text-[10px] font-bold uppercase bg-orange-500 px-2 py-0.5 rounded-md">Evoniq ERP</span>
+                          <h4 className="text-xl font-bold">Evoniq ERP</h4>
+                          <span className="text-[10px] font-bold uppercase bg-orange-500 px-2 py-0.5 rounded-md text-white">SaaS Platform</span>
                         </div>
                         <p className="text-xs text-slate-300 mt-0.5">Enterprise B2B SaaS Technology Provider</p>
                       </div>
@@ -218,7 +218,7 @@ export default function LegalModal({ isOpen, onClose, activeDoc = 'privacy', onS
           </div>
 
           <div className="px-6 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-            <span>© {new Date().getFullYear()} The Propking Realty. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} Evoniq ERP. All rights reserved.</span>
             <button onClick={onClose} className="px-4 py-1.5 text-sm font-medium bg-slate-900 text-white rounded-lg hover:bg-slate-800 cursor-pointer">Close</button>
           </div>
         </motion.div>

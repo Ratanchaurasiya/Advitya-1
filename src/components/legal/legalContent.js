@@ -5,7 +5,7 @@ export const legalDocuments = {
     sections: [
       {
         heading: "1. Overview & Scope",
-        content: `The Propking Realty ("we", "our", or "us") develops and operates Evoniq ERP, a multi-module cloud-based B2B SaaS platform serving Real Estate, MEP, Construction, and Civil Engineering enterprises. This Privacy Policy describes how we collect, process, store, and safeguard data when businesses and their authorized users access the Evoniq ERP platform.`
+        content: `Evoniq ERP ("we", "our", or "us") is a multi-module cloud-based B2B SaaS platform serving Real Estate, MEP, Construction, and Civil Engineering enterprises. This Privacy Policy describes how we collect, process, store, and safeguard data when businesses and their authorized users access the Evoniq ERP platform.`
       },
       {
         heading: "2. Meta Platform Data & WhatsApp-to-Lead Integration",
@@ -31,7 +31,7 @@ export const legalDocuments = {
     sections: [
       {
         heading: "1. Agreement to Terms",
-        content: `These Terms of Service govern your organization's subscription and access to Evoniq ERP, a proprietary B2B SaaS platform developed and operated by The Propking Realty. By deploying or accessing the platform, your organization agrees to these terms.`
+        content: `These Terms of Service govern your organization's subscription and access to Evoniq ERP, a proprietary multi-module B2B SaaS platform. By deploying or accessing the platform, your organization agrees to these terms.`
       },
       {
         heading: "2. Service Provision & Authorized Use",
@@ -43,18 +43,18 @@ export const legalDocuments = {
       },
       {
         heading: "4. Intellectual Property & Confidentiality",
-        content: `Evoniq ERP, including its software architecture, AI/ML models, interfaces, algorithms, and business health scoring systems, is the proprietary property of The Propking Realty. Client customer records, lead data, engineering project files, and financial figures remain the sole confidential property of the client.`
+        content: `Evoniq ERP, including its software architecture, AI/ML models, interfaces, algorithms, and business health scoring systems, is proprietary software. Client customer records, lead data, engineering project files, and financial figures remain the sole confidential property of the client.`
       },
       {
         heading: "5. Service Level & Support",
-        content: `The Propking Realty provides enterprise-grade infrastructure uptime, regular maintenance, data backups, and technical support via support@evoniqerp.com and +91 91731 12620 according to your enterprise service level agreement.`
+        content: `Evoniq ERP provides enterprise-grade infrastructure uptime, regular maintenance, data backups, and technical support via support@evoniqerp.com and +91 91731 12620 according to your enterprise service level agreement.`
       }
     ]
   },
   contact: {
     title: "Contact & Corporate Details",
     lastUpdated: "August 2026",
-    company: "The Propking Realty",
+    company: "Evoniq ERP",
     product: "Evoniq ERP",
     email: "support@evoniqerp.com",
     phone: "+91 91731 12620",
@@ -63,7 +63,7 @@ export const legalDocuments = {
     sections: [
       {
         heading: "Registered Office & Corporate Headquarters",
-        content: `The Propking Realty\nA-1118, The Capital, Opp. Hetarth Party Plot, Science City Road, Ahmedabad, Gujarat, India.`
+        content: `Evoniq ERP\nA-1118, The Capital, Opp. Hetarth Party Plot, Science City Road, Ahmedabad, Gujarat, India.`
       },
       {
         heading: "Official Communications & Support",

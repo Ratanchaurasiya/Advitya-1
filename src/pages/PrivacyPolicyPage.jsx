@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
           </div>
           <h1 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Privacy Policy</h1>
           <p className="text-lg text-slate-600">
-            Evoniq ERP &bull; The Propking Realty &bull; Last Updated August 2026
+            Evoniq ERP &bull; Last Updated August 2026
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-semibold text-slate-800 mb-4">1. Overview & Scope</h2>
             <p className="text-slate-600 leading-relaxed">
-              The Propking Realty operates Evoniq ERP, a multi-module cloud B2B SaaS platform designed for comprehensive business management. This Privacy Policy outlines how we collect, use, process, and protect your data while you use our services. This policy applies to all users of the Evoniq ERP platform and its associated services.
+              Evoniq ERP operates a multi-module cloud B2B SaaS platform designed for comprehensive business management. This Privacy Policy outlines how we collect, use, process, and protect your data while you use our services. This policy applies to all users of the Evoniq ERP platform and its associated services.
             </p>
           </section>
 
@@ -94,7 +94,7 @@ export default function PrivacyPolicyPage() {
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-slate-200 text-center">
           <p className="text-slate-500 text-sm mb-4">
-            &copy; {new Date().getFullYear()} The Propking Realty. All rights reserved.
+            &copy; {new Date().getFullYear()} Evoniq ERP. All rights reserved.
           </p>
           <div className="space-x-4">
             <Link to="/" className="text-sm text-slate-500 hover:text-orange-600 transition-colors">Home</Link>

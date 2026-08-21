@@ -25,7 +25,7 @@ export default function TermsOfServicePage() {
           </div>
           <h1 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Terms of Service</h1>
           <p className="text-lg text-slate-600">
-            Evoniq ERP &bull; The Propking Realty
+            Evoniq ERP &bull; Terms of Service
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-semibold text-slate-800 mb-4">1. Agreement to Terms</h2>
             <p className="text-slate-600 leading-relaxed">
-              These Terms of Service govern your subscription to and use of the Evoniq ERP platform, provided by The Propking Realty. By accessing or using Evoniq ERP, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.
+              These Terms of Service govern your subscription to and use of the Evoniq ERP platform. By accessing or using Evoniq ERP, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.
             </p>
           </section>
 
@@ -55,7 +55,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-semibold text-slate-800 mb-4">4. Intellectual Property</h2>
             <p className="text-slate-600 leading-relaxed">
-              The Evoniq ERP platform, including its original content, features, and functionality, is and will remain the exclusive property of The Propking Realty and its licensors. Conversely, all client data uploaded or processed through the platform remains the sole property of the respective client.
+              The Evoniq ERP platform, including its original content, features, and functionality, is and will remain exclusive proprietary software. Conversely, all client data uploaded or processed through the platform remains the sole property of the respective client.
             </p>
           </section>
 
@@ -69,7 +69,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-semibold text-slate-800 mb-4">6. Limitation of Liability</h2>
             <p className="text-slate-600 leading-relaxed">
-              To the maximum extent permitted by applicable law, in no event shall The Propking Realty, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
+              To the maximum extent permitted by applicable law, in no event shall Evoniq ERP, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
             </p>
           </section>
 
@@ -84,7 +84,7 @@ export default function TermsOfServicePage() {
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-slate-200 text-center">
           <p className="text-slate-500 text-sm mb-4">
-            &copy; {new Date().getFullYear()} The Propking Realty. All rights reserved.
+            &copy; {new Date().getFullYear()} Evoniq ERP. All rights reserved.
           </p>
           <div className="space-x-4">
             <Link to="/" className="text-sm text-slate-500 hover:text-orange-600 transition-colors">Home</Link>
